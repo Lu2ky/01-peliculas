@@ -4,7 +4,7 @@ export interface Movie{
     genre_ids: number[];
     id: number;
     title: string;
-    original_lenguage: string;
+    original_language: string;
     original_title: string;
     overview: string;
     popularity: number;
@@ -14,4 +14,12 @@ export interface Movie{
     video: boolean;
     vote_average: number;
     vote_count: number;
+    origin_country: string[];
+    genres: genre[];
+    runtime: number;
+    tagline: string;
+}
+interface genre{
+    id: number;
+    name: string;
 }
