@@ -1,0 +1,23 @@
+
+img{
+    border-radius: 1rem;
+    border: 0.1rem solid purple;
+}
+.movie-image{
+    border-radius: 1rem;
+    border: 0.1rem solid purple;
+}
+.main-container:hover{
+    opacity: 0.5;
+    transform: translateY(-0.5rem);
+    transition: all 0.5s ease-in-out;
+}
+.main-container{
+    transition: all 0.5s ease-in-out;
+}
+@media (max-width: 560px) {
+    .movie-image{
+        width: 90%;
+        height: auto;
+    }
+}
