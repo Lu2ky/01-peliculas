@@ -3,13 +3,15 @@
     flex-direction: column;
     gap: 2rem;
 }
-.details{
+
+.details {
     font-size: 1rem !important;
 }
+
 .movie-img {
     position: relative;
     min-height: 600px;
-    background-size: 120% cover;
+    background-size: cover;
     background-position: center;
     overflow: hidden;
     display: flex;
@@ -17,13 +19,15 @@
     align-items: center;
 }
 
-.movie-img p{
+.movie-img p {
     font-size: 2rem;
 }
-.tagline{
+
+.tagline {
     font-size: 1rem !important;
     color: #999;
 }
+
 .movie-overlay {
     position: absolute;
     inset: 0;
@@ -39,24 +43,14 @@
             transparent 100%
         ),
         rgba(0, 0, 0, 0.35);
-        
 }
 
 .movie-img img {
     position: relative;
-    
     z-index: 2;
-
     margin: 3rem;
-
     width: 300px;
 }
-.movie-img{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 
 .movie-title {
     display: flex;
@@ -71,9 +65,71 @@
     width: 60%;
     margin-top: 2rem;
 }
-.movie-overview p{
+
+.movie-overview p {
     font-size: 1rem;
 }
-p{
-    font-size:1rem;
+
+p {
+    font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .movie-img {
+        min-height: 500px;
+    }
+
+    .movie-img img {
+        width: 240px;
+        margin: 2rem;
+    }
+
+    .movie-overview {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .movie-img {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .movie-img img {
+        width: 180px;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .movie-img p {
+        font-size: 1.4rem;
+    }
+
+    .movie-title {
+        align-items: center;
+    }
+
+    .movie-overview {
+        width: 90%;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-img img {
+        width: 140px;
+    }
+
+    .movie-img p {
+        font-size: 1.1rem;
+    }
+
+    .movie-overview {
+        width: 95%;
+        font-size: 1rem;
+    }
 }
